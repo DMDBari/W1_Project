@@ -1,3 +1,15 @@
+
+<!--This HTML file represents a web page that showcases the features and functionality of a Mock CRM alled DoubleTap . 
+
+    The structure of the page is as follows:
+    - The <head> section contains the necessary meta tags and CSS links, including Bootstrap CSS and Bootstrap Icons.
+    - The <body> section starts with a container div and a grid div, followed by a header and main content.
+    - The header includes a navigation bar with a logo, menu items, and sign-in/sign-up buttons.
+    - The main content consists of two sections: the first section showcases the main features of DoubleTap CRM with a large image and descriptive text, and the second section highlights additional features with another image and text.
+    - Each section is contained within a container div and uses Bootstrap classes for styling.
+    - The page ends with a footer that includes a call-to-action button and additional information.
+
+    The page utilizes Bootstrap CSS and has JavaScript linked but doesn't utilize it cause it looked cool and i din't want to delete it.-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -35,13 +47,13 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-around me-5" id="navbarNavAltMarkup">
                         <a class="nav-link active" aria-current="page" href="/Landing.html">Home</a>
-                        <a class="nav-link active" href="#">Features</a>
-                        <a class="nav-link active" href="#">Pricing</a>
-                        <a class="nav-link active" href="#">How It Works</a>
-                        <a class="nav-link active" href="#">Support</a>
+                        <a class="nav-link active" href="Landing.html">Features</a>
+                        <a class="nav-link active" href="Landing.html">Pricing</a>
+                        <a class="nav-link active" href="How.html">How It Works</a>
+                        <a class="nav-link active" href="https://github.com/SoftwareSorcerer72">Support</a>
                         <div class="d-flex">
-                            <button type="button" class="btn btn-primary me-3 btn-m fw-bold"> &nbsp; Sign In &nbsp;</button>
-                            <button type="button" class="btn btn-outline-primary ms-2 btn-md fw-bold">Try it Free</button>
+                            <a href="SignIn.html" type="button" class="btn btn-primary me-3 btn-m fw-bold"> &nbsp; Sign In &nbsp;</a>
+                            <a href="SignUp.html" class="btn btn-outline-primary ms-2 btn-md fw-bold">Try it Free</a>
                         </div>
                     </div>
                 </div>
@@ -51,22 +63,30 @@
         <main>
 
             <!-- Cards for content -->
-<div class="container">
-            <div class="card mb-3 border-0" style="max-width: 900px;">
-                <div class="row g-0 row g-0 align-items-center">
-                    <div class="col-md-11 order-md-1 d-flex align-items-center ">
-                        <div class="card-body pb-5 offset-md-1">
-                            <h1 class="card-title" style="font-size: 55px;">Focus on <br> Your Business</h1>
-                            <h4 class="card-title">Let us handle everything else</h4>
-                            <p class="card-text">Subscription billing, powered with revenue retention tools and a seamless customer experience - without the technical hurdles.</p>
-                               
-                            <button type="button" class="btn btn-outline-primary me-3 btn-m fw-bold"> &nbsp; Sign Up Free &nbsp;</button>
-                            <button type="button" class="btn btn-primary ms-2 btn-md fw-bold">Chat With Us</button>
-
-                            <p class="card-text" ><small class="text-body-secondary">Already using DoubleTap?<a class="link" href="SignIn.html" style="white-space: nowrap;"> Sign in</a></p>
-                            <p style="white-space: nowrap;">Free 14 Day Trial &nbsp; <i class="bi bi-circle-fill text-primary"  style="font-size: 10px;"></i>  Manage Customers in Minutes&nbsp; &nbsp;  <i class="bi bi-circle-fill text-primary"  style="font-size: 10px;"></i> Cancel at Anytime</p>
+            <div class="container">
+                <div class="card mb-3 border-0" style="max-width: 1300px;">
+                    <div class="row g-0 align-items-center">
+                        <!-- Text Content Column -->
+                        <div class="col-12 col-md-6 order-md-1 mb-md-5 ">
+                            <div class="card-body pb-5">
+                                <h1 class="card-title" style="font-size: 55px;">Focus on <br> Your Business</h1>
+                                <h4 class="card-title">Let us handle everything else</h4>
+                                <p class="card-text">Subscription billing, powered with revenue retention tools and a seamless customer experience - without the technical hurdles.</p>
+                                <button type="button" class="btn btn-outline-primary me-3 btn-m fw-bold"> &nbsp; Sign Up Free &nbsp;</button>
+                                <button type="button" class="btn btn-primary ms-2 btn-md fw-bold">Chat With Us</button> 
+                                <br>
+                                <br>
+                                <p style="white-space: nowrap;">
+                                    <span style="font-size: 10px;">Free 14 Day Trial &nbsp;</span>
+                                    <i class="bi bi-circle-fill text-primary" style="font-size: 10px;"></i>
+                                    <span style="font-size: 10px;"> Manage Customers in Minutes &nbsp;</span>
+                                    <i class="bi bi-circle-fill text-primary" style="font-size: 10px;"></i>
+                                    <span style="font-size: 10px;"> Cancel at Anytime</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-md-12 order-md-2 offset-md-5">
+                        <!-- Image Column -->
+                        <div class="col-12 col-md-6 order-md-2">
                             <img src="how_it_works/Header-Side-1.png" class="img-fluid rounded-start pt-5" alt="..." style="max-height: 700px; max-width: 900px;">
                         </div>
                     </div>
@@ -118,7 +138,8 @@ style="max-width: auto-max; border-radius: 20px;">
 </div>
 </div>
 </div>
-
+<br>
+<br>
 <div class="container">
     <div class=" card border-1 bg-primary text-white border-secondary" 
     style="max-width: auto-max; border-radius: 20px;">
@@ -152,14 +173,17 @@ style="max-width: auto-max; border-radius: 20px;">
     
 
 </main>
+<br>
+<br>
 <footer class="text-center">
     <!-- place footer here -->
     <div class="containe bg-primary text-white" style="height: auto;">
         <!-- Content here -->
 <h3 class="pt-5 mt-5">Try Double Tap Today</h3>
 <p class="fs-3">Lets Get Started.</p>
-<button type="button" class="btn ms-2 btn-md fw-bold text-light me-4" style="background-color: chartreuse;"> &nbsp; Get Started &nbsp;<i class="bi bi-chevron-double-right"></i></button>
-        <button type="button" class="btn btn-light text-primary fw-bold"><i class="bi bi-chat-dots-fill"></i> Chat With Us</button>
+<a href="SignUp.html" type="button" class="btn ms-2 btn-md fw-bold text-light me-4" style="background-color: chartreuse;"> &nbsp; Get Started &nbsp;<i class="bi bi-chevron-double-right"></i></a>
+        <a href="https://github.com/SoftwareSorcerer72" type="button" class="btn btn-light text-primary fw-bold"><i class="bi bi-chat-dots-fill"></i> Chat With Us</a>
+        <br>
         <br>
         <p style="white-space: nowrap;">Free 14 Day Trial &nbsp; <i class="bi bi-circle-fill text-light me-2"  style="font-size: 10px;"></i>  Manage Customers in Minutes&nbsp; &nbsp;  <i class="bi bi-circle-fill text-light"  style="font-size: 10px;"></i> Cancel at Anytime</p>
         <br>
