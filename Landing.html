@@ -28,7 +28,7 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="d-flex">
+                    <div class="d-flex justify-content-between">
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
                                 <a class="nav-link" href="#">Home</a>
@@ -40,9 +40,9 @@
                         </div>
                     </div>
                     <div>
-                    <a class="btn btn-outline-primary" href="#">Sign In</a>
-                    <a class="btn btn-primary" href="#">Try it Free</a>
-                </div>
+                        <a class="btn btn-outline-primary" href="#">Sign In</a>
+                        <a class="btn btn-primary" href="#">Try it Free</a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -50,20 +50,24 @@
         <div class="row">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
-                        <h1>Focus on Your Business</h1>
-                        <h3>Let Us Handle Everything Else</h3>
-                        <h4>Subscription Billing, powered with revenue retention tolls and a seamless customer
-                            experience -
-                            without the technical hurdles.</h4>
+                    <div class="col-6 d-flex flex-column justify-content-evenly">
+                        <!-- <div class="flex-column justify-content-around"> -->
+                        <p class="display-2 fw-bold">Focus on Your Business</p>
+                        <h2>Let Us Handle Everything Else</h2>
+                        <h5>Subscription Billing, powered with revenue retention tolls and a seamless customer experience -without the technical hurdles.</h5>
                         <!-- buttons -->
+                        <div class="d-inline-flex justify-content-evenly">
+                            <button type="button" class="btn btn-primary btn-lg">Sign Up Free</button>
+                            <button type="button" class="btn btn-outline-primary btn-lg">Chat With Us</button>
+                        </div>
 
                         <h4>Already using DoubleTap? Sign In</h4>
-                        <div>
-                            <h6>Free 14 day trial</h6>
-                            <h6>Manage Customers in Minutes</h6>
-                            <h6>Cancel at Anytime</h6>
+                        <div class="d-inline-flex justify-content-between">
+                            <h6 class=>Free 14 day trial</h6>
+                            <h6 class=>Manage Customers in Minutes</h6>
+                            <h6 class=>Cancel at Anytime</h6>
                         </div>
+                        <!-- </div> -->
                     </div>
                     <div class="col-6">
                         <img src="./how_it_works/Header-Side-1.png" alt="">
