@@ -19,7 +19,7 @@
         <div class="row">
             <!-- Nav Bar -->
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
+                <div class="container-fluid p-0 m-0">
                     <a class="navbar-brand" href="#">
                         <img src="./logo/Logo.png" alt="Logo" class="Bootstrap">
                     </a>
@@ -28,8 +28,8 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="d-flex justify-content-between">
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="">
+                        <div class="collapse navbar-collapse flex-grow-1" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
                                 <a class="nav-link" href="#">Home</a>
                                 <a class="nav-link" href="#">Features</a>
@@ -50,23 +50,26 @@
         <div class="row">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 d-flex flex-column justify-content-evenly">
+                    <div class="col-6 d-flex flex-column justify-content-evenly pb-5">
                         <!-- <div class="flex-column justify-content-around"> -->
                         <p class="display-2 fw-bold">Focus on Your Business</p>
                         <h2>Let Us Handle Everything Else</h2>
-                        <h5>Subscription Billing, powered with revenue retention tolls and a seamless customer experience -without the technical hurdles.</h5>
+                        <h5 class="text-body-secondary">Subscription Billing, powered with revenue retention tolls and a seamless customer
+                            experience -without the technical hurdles.</h5>
                         <!-- buttons -->
                         <div class="d-inline-flex justify-content-evenly">
-                            <button type="button" class="btn btn-primary btn-lg">Sign Up Free</button>
-                            <button type="button" class="btn btn-outline-primary btn-lg">Chat With Us</button>
+                            <button type="button" class="btn btn-primary btn-lg"> &nbsp; Get Started &nbsp;<i
+                                    class="bi bi-chevron-double-right"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-lg"><i
+                                    class="bi bi-chat-dots-fill"></i> Chat With Us</button>
                         </div>
 
-                        <h4>Already using DoubleTap? Sign In</h4>
-                        <div class="d-inline-flex justify-content-between">
-                            <h6 class=>Free 14 day trial</h6>
-                            <h6 class=>Manage Customers in Minutes</h6>
-                            <h6 class=>Cancel at Anytime</h6>
-                        </div>
+                        <a href="" class="text-body-secondary">Already using DoubleTap? Sign In</a>
+                        <p style="white-space: nowrap; pb-5">Free 14 Day Trial &nbsp; <i
+                                class="bi bi-circle-fill text-primary me-2" style="font-size: 10px;"></i> Manage
+                            Customers in
+                            Minutes&nbsp; &nbsp; <i class="bi bi-circle-fill text-primary" style="font-size: 10px;"></i>
+                            Cancel at Anytime</p>
                         <!-- </div> -->
                     </div>
                     <div class="col-6">
@@ -90,17 +93,26 @@
         </div>
         <!-- Info Card -->
         <div class="row">
-            <div class="card">
-                <img src="./landing/credit-card-picture.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 class="card-title">Start accepting payments with Ease</h3>
-                    <h4 class="card-text">Deliver the world of payment options and seamless checkout experiences, making
-                        it easy for your customers to pay you for your products and services</h4>
-                    <h6>- Accept credit & debit cards, Paypal, ACH, Apple pay and more with the flick of a switch.</h6>
-                    <h6>- Process transactions in up to 32 different currencies.</h6>
-                    <h6>- Integrate with popular payment gateways like Stripe and Braintree</h6>
-                    <h6>- Select from a variety of different checkout options and experiences</h6>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./landing/credit-card-picture.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8 bg-primary text-white">
+                        <div class="card-body ">
+                            <h5 class="card-title">Start accepting payments with Ease</h5>
+                            <p class="card-text">Deliver the world of payment options and seamless checkout experiences,
+                                making it easy for your customers to pay you for your products and services.</p>
+                            <div>
+                                <p>- Accept credit & debit cards, Paypal, ACH, Apple pay and more with the flick of a
+                                    switch</p>
+                                <p>-Process transactions in up to 32 different currencies</p>
+                                <p>-Integrate with popular payment gateways like Stripe, and Braintree</p>
+                                <p>- Select from a variety of different checkout options and experiences</p>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,21 +160,28 @@
             </div>
         </div>
         <!-- Footer -->
-        <div class="row">
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                    <span class="navbar-brand mb-0 h1">Try Double Tap Today</span>
-                    <h5>Let's Get Started</h5>
-                    <a class="btn btn-primary" href="#">Get Started</a>
-                    <a class="btn btn-primary" href="#">Chat With Us</a>
-                    <div>
-                        <h6>Free 14 Day Trial</h6>
-                        <h6>Manage Customers in Minutes</h6>
-                        <h6>Cancel at Anytime</h6>
-                    </div>
-                </div>
-            </nav>
-        </div>
+
+        <footer class="text-center container-fluid">
+            <div class="bg-primary text-white" style="height: auto;">
+                <!-- Content here -->
+                <h3 class="pt-5 mt-5">Try Double Tap Today</h3>
+                <p class="fs-3">Lets Get Started.</p>
+                <button type="button" class="btn ms-2 btn-md fw-bold text-light me-4 "
+                    style="background-color: #7FD126;">
+                    &nbsp; Get Started &nbsp;<i class="bi bi-chevron-double-right"></i></button>
+                <button type="button" class="btn btn-light text-primary fw-bold"><i class="bi bi-chat-dots-fill"></i>
+                    Chat
+                    With Us</button>
+                <br>
+                <p style="white-space: nowrap;">Free 14 Day Trial &nbsp; <i class="bi bi-circle-fill text-light me-2"
+                        style="font-size: 10px;"></i> Manage Customers in
+                    Minutes&nbsp; &nbsp; <i class="bi bi-circle-fill text-light" style="font-size: 10px;"></i>
+                    Cancel at Anytime</p>
+                <br>
+                <br>
+            </div>
+        </footer>
+
     </div>
 
 
